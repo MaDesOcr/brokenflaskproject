@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Results</title>
+</head>
+
+<body>
+    <h1>Voting Results</h1>
+    <ul>
+        {% for option, count in votes.items() %}
+        <li>{{ option }}: {{ count }} votes</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+
+</html>
